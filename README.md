@@ -99,6 +99,14 @@ Lista de modelos
 ./cortex models list
 ```
 
+### 6.- Finalizar Servidor
+Para cerra el servidor 
+```
+curl --request DELETE \
+  --url http://127.0.0.1:39281/processManager/destroy
+
+```
+
 
 # Desde Python
 
@@ -121,4 +129,8 @@ pip install openai===1.55.3
 Abrir Servidor local
 ```
 http://127.0.0.1:39281/
+```
+Documentación oficial
+```
+https://cortex.so/docs/basic-usage/
 ```
