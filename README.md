@@ -89,7 +89,7 @@ Le entregamos algunos comentarios al modelo.
 "La atención fue correcta, pero no hubo un trato especial."
 ```
 
-El modelo procesara y entregara el resultaro en un formato predefinido.
+El modelo procesara y entregara el resultado en un formato predefinido.
 
 - "-1" sentimiento de insatisfacción
 - "0"  sentimiento neutro 
