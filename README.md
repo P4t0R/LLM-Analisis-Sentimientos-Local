@@ -51,7 +51,7 @@ Lista de modelos
 ```
 
 
-#Desde Python
+# Desde Python
 
 ## Crear Enviroment
 
@@ -72,4 +72,54 @@ pip install openai===1.55.3
 Abrir Servidor local
 ```
 http://127.0.0.1:39281/
+```
+
+
+
+# Resultado 
+
+Le pasamos algunos comentarios 
+
+```
+"Me encanta cómo funciona esta aplicación, es muy fácil de usar.",
+"La comida en este restaurante es espectacular, definitivamente volveré.",
+"La calidad del producto dejó mucho que desear, no lo volveré a comprar.",
+"El servicio fue muy lento, tuve que esperar más de una hora.",
+"El libro tiene una buena trama, pero algunos capítulos fueron lentos.",
+"La atención fue correcta, pero no hubo un trato especial."
+```
+
+El resultaro sera en un formato predefinido.
+
+- "-1" sentimiento de insatisfacción
+- "0"  sentimiento neutro 
+- "1"  sentimiento de satisfacción. 
+
+```json
+[
+    {
+        "comment": "Me encanta cómo funciona esta aplicación, es muy fácil de usar.",
+        "result": "1"
+    },
+    {
+        "comment": "La comida en este restaurante es espectacular, definitivamente volveré.",
+        "result": "1"
+    },
+    {
+        "comment": "La calidad del producto dejó mucho que desear, no lo volveré a comprar.",
+        "result" : "-1"
+    },
+    {   
+        "comment": "El servicio fue muy lento, tuve que esperar más de una hora.",
+        "result": "-1" 
+    },
+    {
+        "comment": "El libro tiene una buena trama, pero algunos capítulos fueron lentos.",
+        "result": "0"
+    },
+    {
+        "comment": "La atención fue correcta, pero no hubo un trato especial.",
+        "result": "0"
+    }
+]
 ```
