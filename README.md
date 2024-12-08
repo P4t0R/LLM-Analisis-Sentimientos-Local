@@ -78,7 +78,7 @@ http://127.0.0.1:39281/
 
 # Resultado 
 
-Le pasamos algunos comentarios 
+Le entregamos algunos comentarios al modelo.
 
 ```
 "Me encanta cómo funciona esta aplicación, es muy fácil de usar.",
@@ -89,12 +89,13 @@ Le pasamos algunos comentarios
 "La atención fue correcta, pero no hubo un trato especial."
 ```
 
-El resultaro sera en un formato predefinido.
+El modelo procesara y entregara el resultaro en un formato predefinido.
 
 - "-1" sentimiento de insatisfacción
 - "0"  sentimiento neutro 
 - "1"  sentimiento de satisfacción. 
 
+Resultado ejemplo
 ```json
 [
     {
